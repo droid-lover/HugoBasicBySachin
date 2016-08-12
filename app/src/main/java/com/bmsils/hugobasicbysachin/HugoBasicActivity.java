@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -57,6 +58,7 @@ public class HugoBasicActivity extends AppCompatActivity {
         num1 = Integer.parseInt(hugoBasicActivityFirstNumberTILEditText.getText().toString());
         num2 = Integer.parseInt(hugoBasicActivitySecondNumberTILEditText.getText().toString());
         getSum(num1, num2);
+        Toast.makeText(HugoBasicActivity.this, "sum is :" + sum, Toast.LENGTH_SHORT).show();
     }
 
     @DebugLog
